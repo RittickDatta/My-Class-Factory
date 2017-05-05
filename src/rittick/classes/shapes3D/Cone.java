@@ -3,9 +3,9 @@ package rittick.classes.shapes3D;
 /**
  * Created by Rittick on 5/5/2017.
  */
-public class Cylinder {
+public class Cone {
 
-    private double radius;
+    private  double radius;
     private double height;
     private double surfaceArea;
     private double volume;
@@ -13,19 +13,19 @@ public class Cylinder {
 
     private static final double PI = 3.14;
 
-    public Cylinder(double radius, double height) {
+    public Cone(double radius, double height) {
         this.radius = radius;
         this.height = height;
     }
 
     public double getSurfaceArea() {
-        this.surfaceArea = (2 * 3.14 * radius * height) + (2 * 3.14 * Math.pow(radius, 2));
-        return this.surfaceArea;
+        this.surfaceArea =  PI * radius * (radius + Math.sqrt(Math.pow(height, 2)+ Math.pow(radius,2)));
+        return surfaceArea;
     }
 
     public double getVolume() {
-        this.volume = PI * Math.pow(radius, 2) * height;
-        return this.volume;
+        this.volume = PI * Math.pow(radius, 2) * height * 1/3;
+        return volume;
     }
 
     public double getRadius() {

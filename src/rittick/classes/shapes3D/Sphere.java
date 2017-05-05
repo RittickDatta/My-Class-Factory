@@ -8,6 +8,7 @@ public class Sphere {
     private double radius;
     private double surfaceArea;
     private double volume;
+    private String color;
 
     public Sphere(double radius) {
         this.radius = radius;
@@ -35,5 +36,13 @@ public class Sphere {
 
     public void setVolume(double volume) {
         this.volume = volume;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

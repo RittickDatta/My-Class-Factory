@@ -10,6 +10,7 @@ public class CubeRectangle {
     private double height;
     private double area;
     private double volume;
+    private String color;
 
     public CubeRectangle(double length, double breadth, double height) {
         this.length = length;
@@ -55,5 +56,13 @@ public class CubeRectangle {
 
     public void setVolume(double volume) {
         this.volume = volume;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
